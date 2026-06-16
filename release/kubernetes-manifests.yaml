@@ -787,11 +787,11 @@ spec:
           name: redis-data
         resources:
           limits:
-            memory: 32Mi
-            cpu: 10m
-          requests:
-            cpu: 50m
             memory: 64Mi
+            cpu: 50m
+          requests:
+            cpu: 10m
+            memory: 32Mi
       volumes:
       - name: redis-data
         emptyDir: {}
