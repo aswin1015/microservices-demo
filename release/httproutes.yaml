@@ -1,10 +1,10 @@
 # apiVersion: gateway.networking.k8s.io/v1
 # kind: HTTPRoute
 # metadata:
-#   name: sowrabh-frontend-route
+#   name: aswin-frontend-route
 # spec:
 #   parentRefs:
-#     - name: sowrabh-gateway
+#     - name: aswin-gateway
 #   rules:
 #     - matches:
 #         - path:

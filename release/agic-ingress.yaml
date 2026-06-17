@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: sowrabh-frontend-ingress
+  name: aswin-frontend-ingress
   annotations:
     appgw.ingress.kubernetes.io/backend-protocol: http
     appgw.ingress.kubernetes.io/health-probe-path: /_healthz
