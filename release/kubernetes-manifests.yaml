@@ -56,19 +56,22 @@ spec:
         - name: DISABLE_PROFILER
           value: "1"
         readinessProbe:
+          timeoutSeconds: 5
           periodSeconds: 5
           exec:
             command: ["/bin/grpc_health_probe", "-addr=:8080"]
         livenessProbe:
+          initialDelaySeconds: 20
+          timeoutSeconds: 5
           periodSeconds: 5
           exec:
             command: ["/bin/grpc_health_probe", "-addr=:8080"]
         resources:
           requests:
-            cpu: 10m
+            cpu: 100m
             memory: 32Mi
           limits:
-            cpu: 50m
+            cpu: 250m
             memory: 64Mi
 ---
 apiVersion: v1
